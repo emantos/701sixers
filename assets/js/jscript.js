@@ -10,6 +10,12 @@ function(){
 document.querySelector('#popup').style.display = 'flex';
 });
 
+document.getElementById('button3').addEventListener('click',
+function(){
+    
+document.querySelector('#popup').style.display = 'flex';
+});
+
 document.querySelector('.close-btn').addEventListener('click', function(){
     
 document.querySelector('#popup').style.display = 'none';

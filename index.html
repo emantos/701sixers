@@ -8,10 +8,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+								<link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
+								<script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
 	</head>
 	<body class="is-preload">
-<h1>TEST!@#</h1>
+
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
@@ -63,7 +66,7 @@
   Your browser does not support the video tag.
 </video> -->
 								
-									<h3>Alfonso Family
+									<h3>Lariosa Family
                                     </h3>
 									<p>The Alfonso family
 									in need of financial help and support. They are a subanen tribe at the mountains of Malaybalay Bukidnon</p>
@@ -88,14 +91,14 @@
   Your browser does not support the video tag.
 </video> -->
 								
-									<h3>Alfonso Family
+									<h3>Coning Family
                                     </h3>
 									<p>The Alfonso family
 									in need of financial help and support. They are a subanen tribe at the mountains of Malaybalay Bukidnon</p>
 								
                    
       <ul class="actions special">  
-       <li>   <a href="#" id="button" class="button">Support</a></li>
+       <li>   <a href="#" id="button2" class="button">Support</a></li>
 									</ul>        
         
 							</article>
@@ -125,7 +128,7 @@
 								
                    
       <ul class="actions special">  
-       <li>   <a href="#" id="button2" class="button">Support</a></li>
+       <li>   <a href="#" id="button3" class="button">Support</a></li>
 									</ul>        
         
 							</article>
@@ -189,9 +192,24 @@ Not yet a member?
 					</div>
 
 				<!-- Footer and REGISTRATION -->
-					<footer id="footer">
+					 <footer id="footer">
 						<section>
-							<form method="post" action="#">
+							<h2>Registration</h2>
+							<div id="formio">
+								<!--<script src="https://unpkg.com/formiojs@latest/dist/formio.embed.js?src=https://vdzwvbgbnzpxmrl.form.io/user/register"></script>
+								<script type="text/javascript">
+									window.onload = function() {
+									  Formio.createForm(document.getElementById('formio'), 'https://vdzwvbgbnzpxmrl.form.io/user/register');
+									};
+								  </script>-->
+
+<script type="text/javascript">
+	window.onload = function() {
+	  Formio.createForm(document.getElementById('formio'), 'https://vdzwvbgbnzpxmrl.form.io/user/register');
+	};
+  </script>
+							</div>
+								<!--		<form method="post" action="#">
 								<div class="fields">
                                    
 									<div class="field">
@@ -246,8 +264,8 @@ Not yet a member?
 								<ul class="actions">
 									<li><input type="submit" value="Register" /></li>
 								</ul>
-							</form>
-						</section>
+							</form>-->
+						</section> 
                         
                         <!--- ABOUT -->
 						<section class="split contact">

@@ -26,6 +26,15 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;
     background-color: 6699ff
 }
+#formios{
+	margin: 5px;
+	padding: 5px;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+#formios button{
+	margin-top: 20px;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2097,8 +2106,7 @@ input, select, textarea {
 		input[type="reset"].icon:before,
 		input[type="button"].icon:before,
 		button.icon:before,
-		.button.icon:before, button2.icon:before, button3.icon:before,
-	 {
+		.button.icon:before, button2.icon:before, button3.icon:before {
             
 			margin-right: 0.5rem;
 		}
@@ -2107,7 +2115,7 @@ input, select, textarea {
 		input[type="reset"].icon.solo,
 		input[type="button"].icon.solo,
 		button.icon.solo,
-		.button.icon.solo, button2.icon.solo, button3.icon.solo,{
+		.button.icon.solo, button2.icon.solo, button3.icon.solo{
 			position: relative;
 			width: 4rem;
 			height: 4rem;
