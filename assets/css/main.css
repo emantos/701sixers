@@ -82,6 +82,10 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+#map {
+	height: 200px;  /* The height is 400 pixels */
+	width: 200px;  /* The width is the width of the web page */
+   }
 
 /* Basic */
 
@@ -90,7 +94,7 @@ input, select, textarea {
 	}
 
 	body {
-		-ms-overflow-style: scrollbar;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
 	}
 
 	@media screen and (max-width: 480px) {
@@ -4711,16 +4715,17 @@ input[type="button2"].large,
 #popup{
     position: fixed;
     top: 50%;
-    left: 55%;
+    left: 50%;
     transform: translate(-50%, -50%);
     display: none;
 }
 #popup .form{
     background: #fff;
     padding: 50px 45px;
-    border-radius: 2px;
+    border-radius: 1px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: -150px;
+	width: 320px;
+	height: 450px;
 }
 #popup .form form .form-control{
     height: 40px;
@@ -4753,13 +4758,19 @@ input[type="button2"].large,
     font-size: 14px;
 }
 #popup .close-btn{
-    position: absolute;
-    right: -90px;
-    top: -99px;
+    position: fixed;
+    right: 40px;
+    top: 50px;
     cursor: pointer;
 }
 #popup .close-btn:hover{
     color:aqua;
+}
+a.close{
+	font-size: 14px;
+	color:black;
+	text-align: right;
+	margin-left: 0px;
 }
 
 
@@ -4834,3 +4845,59 @@ input[type="checkbox"]{
     font-size: 14px;
 }
 */
+
+
+#popup2{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+#popup2 .form{
+    background: #fff;
+    padding: 50px 45px;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 420px;
+	height: 890px;
+}
+#popup2 .form form .form-control{
+    height: 40px;
+     margin: 2px;
+    font-size: 15px;
+}
+#popup2 .form form .button{
+    background: #1a8cff;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#popup2 .form form .button:hover{
+    background: white;
+}
+
+#popup2 .form form .link{
+    padding: 5px 0;
+}
+#popup2 .form form .link a{
+    color: blue;
+}
+#popup2 .login-form form p{
+    font-size: 14px;
+    margin: 15px;
+}
+#popup2 .row .alert{
+    font-size: 14px;
+}
+#popup2 .close-btn2{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+#popup2 .close-btn2:hover{
+    color:aqua;
+}
