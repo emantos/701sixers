@@ -21,7 +21,8 @@
 				<!-- Intro -->
 					<div id="intro">
 						<img src="images/logowe.png" alt="wecare">
-						<p> Do you believe that the poor and the rich can become as equally respected?<br/> WeCare is a web-app that lets the wealthy, support or adopt a family and balance the upset of wealth and hopefully erase poverty. <a href="#footer"> Register Now!</a> To start.</p>
+						<p> Do you believe that the poor and the rich can become as equally respected?<br/> WeCare is a web-app that lets the wealthy, 
+							support or adopt a family and balance the upset of wealth and hopefully erase poverty.<br/> <a href="#footer"> Register Now!</a> To start.</p>
 				<!---		<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul> -->
@@ -52,8 +53,8 @@
 								<header class="major">
                             
 								<span><h3>Family in need of your support.
-								</h3></span>
-                                <span class="date">October 2020
+								</h3></span> &nbsp;
+                                <span class="date">
                                 </span>
                         
 									
@@ -104,15 +105,7 @@
 							</article>
                         
                         <article class="post featured">
-								<header class="major">
-                            
-								<span><h3>Family in need of your support.
-								</h3></span>
-                                <span class="date">October 2020
-                                </span>
-                        
-									
-								</header>
+								
 								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
  <!--
 <video controls loop>
@@ -121,7 +114,7 @@
   Your browser does not support the video tag.
 </video> -->
 								
-									<h3>Alfonso Family
+									<h3>Calago Family
                                     </h3>
 									<p>The Alfonso family
 									in need of financial help and support. They are a subanen tribe at the mountains of Malaybalay Bukidnon</p>
@@ -144,11 +137,11 @@
 									<a href="#" class="page">8</a>
 									<a href="#" class="page">9</a>
 									<a href="#" class="page">10</a>-->
-									<a href="#" class="next">Go back up</a>
+									<a href="generic.html" class="next">Go to Dashboard</a>
 								</div>
 							</footer>
 
-<!---FORM POP UP-->
+<!---FORM POP UP LOGIN-->
 <div id="popup">
    <div class="row">
             <div class="col-md-4 offset-md-4 form login-form">
@@ -156,7 +149,6 @@
                 
                     <a for="#" class="close-btn fas fa-times" class="close-btn"></a>
                     <h2 class="text-center">Login</h2>
-                    
 <!--<?php
                     if(count($errors) > 0){
                         ?>
@@ -178,19 +170,85 @@
                     </div>
                     <p><a href="forgot.html">Forgot password?</a></p>
 <div class="form-group">
-                        <input class="form-control button" type="submit" name="login" value="Login">
+                        <input class="form-control button" id="log-in" type="submit" name="login" value="Login">
                     </div>
-<!-- Somehow I got an error, so I comment this div, just uncomment to use or show -->
-<div class="link login-link text-center">
-Not yet a member? 
-    <a href="#footer" class="close">Signup now</a></div> 
+<!-- Somehow I got an error, so I comment this div, just uncomment to use or show 
+<div class="link login-link text-center">-->
+<p>
+	<a href="#footer" class="close">Not yet a member?</a>
+	</p>
+
 </form>
 </div>
 </div>
 </div>    
 
-					</div>
+<!-- REQUEST SUPPORT POP UP -->
+<div id="popup2">
+		<div class="row">
+				<div class="col-md-4 offset-md-4 form login-form">
+					<form action="login-user.php" method="POST" autocomplete="">
+					
+						<a for="#" class="close-btn fas fa-times" class="close-btn"></a>
+						<h3 class="text-center">Support</h3>
+						<!-- VIDEO/IMAGE PLACE HOLDER-->
+						<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+						
+						<p>Get data from the family clicked here! the family lives in san pablo and are very poor and can make your eyes hurt by
+							hearing their stories. </p>
 
+<div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 7.658498, lng: 123.4501687};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 10, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjS_xp_97ce3kbFZd1UAFLnRSklLiboAs&callback=initMap">
+	</script>
+	<br/>
+
+	
+	<!--<?php
+						if(count($errors) > 0){
+							?>
+							<div class="alert alert-danger text-center">
+								<?php
+								foreach($errors as $showerror){
+									echo $showerror;
+								}
+								?>
+							</div>
+	<?php
+						}
+						?>-->
+						<div class="form-group">
+             <select id = "typeofaccount">
+                 <option value = "individual">*Select Type of Support*</option>
+               <option value = "individual">In-kind</option>
+               <option value = "organization">Monetary</option>
+			   <option value = "organization">Bundle of joy</option>
+			   <option value = "organization">Plan a visit</option>
+			 </select></div>
+			 
+			 <div class="form-group">
+					<input class="form-control button" type="submit" name="login" value="Submit">
+				</div>
+	<!-- Somehow I got an error, so I comment this div, just uncomment to use or show -->
+	
+	</form>
+	</div>
+	</div>
+</div>
+
+</div>
 				<!-- Footer and REGISTRATION -->
 					 <footer id="footer">
 						<section>
@@ -301,6 +359,7 @@ Not yet a member?
 					</div>
 
 			</div>
+			
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
