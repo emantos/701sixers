@@ -13,6 +13,14 @@ const Home = class extends Component {
     const {auth} = this.props;
     return (
       <div>
+          <div id="intro">
+            <img src="images/logowe.png" alt="wecare" />
+						<p> Do you believe that the poor and the rich can become as equally respected?<br/> WeCare is a web-app that lets the wealthy, 
+							support or adopt a family and balance the upset of wealth and hopefully erase poverty.<br/> <a href="#footer"> Register Now!</a> To start.</p>
+            <ul className="actions">
+              <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+					</div>                
         <Hero />
         <div className="container">
           { auth.authenticated ? (

@@ -12,7 +12,9 @@
     "precommit": "pretty-quick --staged"
   },
   "devDependencies": {
-    "react-scripts": "^3.4.0"
+    "css-loader": "^4.3.0",
+    "react-scripts": "^3.4.0",
+    "style-loader": "^1.2.1"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
