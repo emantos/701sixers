@@ -9,18 +9,32 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
   <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-  <link rel="stylesheet" href="%PUBLIC_URL%/css/main.css" />
+  <!-- <link rel="stylesheet" href="%PUBLIC_URL%/css/main.css" /> -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/main.css" />
+
   <noscript>
       <link rel="stylesheet" href="%PUBLIC_URL%/css/noscript.css" />
   </noscript>
   <title>We Care</title>
 </head>
 
-<body>
-  <noscript>
-    You need to enable JavaScript to run this app.
-  </noscript>
-  <div id="root"></div>
-</body>
+  <body id="top" className="is-preload">
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+
+      <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/jquery.poptrox.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+
+
+  </body>
 
 </html>
